@@ -48,11 +48,14 @@
         ssl_certificate      /Users/user/nginx-lab/ssl/site1.crt;
         ssl_certificate_key  /Users/user/nginx-lab/ssl/site1.key;```
 
+
+
 - ```listen  80``` - прослушивание HTTP-запросов на порту 80
 - ```return       301 https://site1.local:443$request_uri``` - перенаправление 301 (301 код постоянного перемещения, сообщает браузерам и поисковым системам, что страница перемещена)
 
 
 Для site2:
+
 
 ```server {
         listen       80;
@@ -66,6 +69,8 @@
         
         ssl_certificate      /Users/user/nginx-lab/ssl/site2.crt;
         ssl_certificate_key  /Users/user/nginx-lab/ssl/site2.key;```
+
+
 
 Проверка: 
 ![Проверка2](./images/image5.png)
