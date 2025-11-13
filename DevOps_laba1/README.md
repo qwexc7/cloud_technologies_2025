@@ -56,11 +56,11 @@
 
 Для site2:```
 
-   server {
+   ```server {
         listen       80;
         server_name  site2.local;
         return       301 https://site2.local:443$request_uri;
-    }
+    }```
     
     server {
         listen       443 ssl;
@@ -73,4 +73,9 @@
 
 Проверка: 
 ![Проверка2](./images/image5.png)
+
+
+
+
+
 
