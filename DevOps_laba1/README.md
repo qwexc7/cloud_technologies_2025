@@ -122,6 +122,16 @@ location /files/ {
 
 ## 5. Результат 
 
+site1:
+
+
+![Проверка4](./images/image7.png)
+![Проверка4](./images/image8.png)
+
+site2:
+
+![Проверка4](./images/image9.png)
+![Проверка4](./images/image10.png)
 
 
 
