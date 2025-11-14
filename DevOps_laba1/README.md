@@ -33,7 +33,7 @@
 
 ## Настроить принудительное перенаправление HTTP-запросов (порт 80) на HTTPS (порт 443) для обеспечения безопасного соединения
 
-Для site1:```
+Для site1:``
 
    server {
         listen  80;
@@ -49,6 +49,7 @@
         ssl_certificate_key  /Users/user/nginx-lab/ssl/site1.key;```
 
 
+Пояснение: 
 
 -  ```listen  80``` - прослушивание HTTP-запросов на порту 80
 -  ```return       301 https://site1.local:443$request_uri``` - перенаправление 301 (301 код постоянного перемещения, сообщает браузерам и поисковым системам, что страница перемещена)
@@ -56,7 +57,7 @@
 
 Для site2:```
 
-   ```server {
+   server {
         listen       80;
         server_name  site2.local;
         return       301 https://site2.local:443$request_uri;
