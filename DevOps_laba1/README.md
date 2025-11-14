@@ -33,9 +33,9 @@
 
 ## Настроить принудительное перенаправление HTTP-запросов (порт 80) на HTTPS (порт 443) для обеспечения безопасного соединения
 
-Для site1:```
+Для site1:
 
-   server {
+   ```server {
         listen  80;
         server_name  site1.local;
         return       301 https://site1.local:443$request_uri;
@@ -46,7 +46,8 @@
         server_name  site1.local;
 
         ssl_certificate      /Users/user/nginx-lab/ssl/site1.crt;
-        ssl_certificate_key  /Users/user/nginx-lab/ssl/site1.key;```
+        ssl_certificate_key  /Users/user/nginx-lab/ssl/site1.key;
+ ```
 
 
 Пояснение: 
@@ -55,7 +56,8 @@
 -  ```return       301 https://site1.local:443$request_uri``` - перенаправление 301 (301 код постоянного перемещения, сообщает браузерам и поисковым системам, что страница перемещена)
 
 
-Для site2:```
+Для site2:
+```
 
    server {
         listen       80;
@@ -68,7 +70,8 @@
         server_name  site2.local;
         
         ssl_certificate      /Users/user/nginx-lab/ssl/site2.crt;
-        ssl_certificate_key  /Users/user/nginx-lab/ssl/site2.key;```
+        ssl_certificate_key  /Users/user/nginx-lab/ssl/site2.key;
+```
 
 
 
