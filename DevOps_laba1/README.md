@@ -20,22 +20,31 @@
 
 ![Сертификат](./images/image2.png)
 
+
+
 Для site2: ```openssl req -x509 -nodes -days 365 -newkey rsa:2048 \
   -keyout site2.key -out site2.crt \
   -subj "/C=RU/ST=Moscow/L=Moscow/O=Lab/CN=site2.local"```
 
+
+
 ![Сертификат2](./images/image3.png)
+
+
 
 Проверяем что сертификаты созданы:
 ```ls -la ~/nginx-lab/ssl/```
 
+
+
 ![Проверка](./images/image4.png)
 
-## Настроить принудительное перенаправление HTTP-запросов (порт 80) на HTTPS (порт 443) для обеспечения безопасного соединения
+## 2. Настроить принудительное перенаправление HTTP-запросов (порт 80) на HTTPS (порт 443) для обеспечения безопасного соединения
 
 Для site1:
 
-   ```server {
+```
+   server {
         listen  80;
         server_name  site1.local;
         return       301 https://site1.local:443$request_uri;
@@ -76,7 +85,16 @@
 
 
 Проверка: 
+Всё правильно, при http запросе нас перенаправляет на https
+
+
 ![Проверка2](./images/image5.png)
+
+
+## 3. Настройка alias
+
+
+
 
 
 
