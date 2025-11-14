@@ -33,7 +33,7 @@
 
 ## Настроить принудительное перенаправление HTTP-запросов (порт 80) на HTTPS (порт 443) для обеспечения безопасного соединения
 
-Для site1:``
+Для site1:```
 
    server {
         listen  80;
@@ -61,7 +61,7 @@
         listen       80;
         server_name  site2.local;
         return       301 https://site2.local:443$request_uri;
-    }```
+    }
     
     server {
         listen       443 ssl;
