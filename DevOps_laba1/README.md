@@ -47,11 +47,11 @@
    server {
         listen  80;
         server_name  site1.local;
-        return       301 https://site1.local:443$request_uri;
+        return   301 https://site1.local:443$request_uri;
     }
     
     server {
-        listen       443 ssl;
+        listen   443 ssl;
         server_name  site1.local;
 
         ssl_certificate      /Users/user/nginx-lab/ssl/site1.crt;
@@ -62,20 +62,20 @@
 Пояснение: 
 
 -  ```listen  80``` - прослушивание HTTP-запросов на порту 80
--  ```return       301 https://site1.local:443$request_uri``` - перенаправление 301 (301 код постоянного перемещения, сообщает браузерам и поисковым системам, что страница перемещена)
+-  ```return   301 https://site1.local:443$request_uri``` - перенаправление 301 (301 код постоянного перемещения, сообщает браузерам и поисковым системам, что страница перемещена)
 
 
 Для site2:
 ```
 
    server {
-        listen       80;
+        listen  80;
         server_name  site2.local;
-        return       301 https://site2.local:443$request_uri;
+        return   301 https://site2.local:443$request_uri;
     }
     
     server {
-        listen       443 ssl;
+        listen   443 ssl;
         server_name  site2.local;
         
         ssl_certificate      /Users/user/nginx-lab/ssl/site2.crt;
