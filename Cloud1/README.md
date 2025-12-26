@@ -23,7 +23,7 @@ Service Usage Type - уточняет конкретную метрику<br>
 
 Выполняем с помощью https://docs.aws.amazon.com
 
-Ссылка на таблицу https://drive.google.com/file/d/11PH5y6Wfe3HEMWjWfaSQi0keQ_fR_b0G/view?usp=sharing
+Ссылка на таблицу https://drive.google.com/file/d/1xYDtgP8ZkAmOnlOkLs-HIZvJuhUkVGLB/view?usp=sharing
 
 ## Вывод 
 В ходе выполнения лабораторной работы были изучены основные модели предоставления облачных сервисов: IaaS, PaaS и SaaS, а также особенности их применения в облачной платформе Amazon Web Services.
